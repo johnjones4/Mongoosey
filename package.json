@@ -1,6 +1,6 @@
 {
   "name": "mongoosey",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple Mongoose frontend that can be built into a pre-existing Express application.",
   "main": "index.js",
   "repository": {
