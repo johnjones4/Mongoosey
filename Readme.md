@@ -23,7 +23,7 @@ After that, Mongoosey will setup routes under `/db` to manage all defined Mongoo
 
 * **/db/User** - Lists all MongoDB documents in the collection associated with that model
 * **/db/User/new** - Creates a new instance of that model for editing
-* **/db/User/<ObjectId>** - Displays the object with that ObjectId for editing
+* **/db/User/_ObjectId_** - Displays the object with that ObjectId for editing
 
 To add a layer of security, simply add another route handler similar to Connect app:
 
