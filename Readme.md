@@ -25,7 +25,7 @@ After that, Mongoosey will setup routes under `/db` to manage all defined Mongoo
 * **/db/User/new** - Creates a new instance of that model for editing
 * **/db/User/_ObjectId_** - Displays the object with that ObjectId for editing
 
-To add a layer of security, simply add another route handler similar to Connect app:
+To add a layer of security, simply add a route handler to Mongoosey similar to a Connect app:
 
 ```
 mongoosey.use(function(req,res,next) {
