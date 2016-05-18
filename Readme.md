@@ -17,6 +17,8 @@ var mongoosey = require('mongoosey');
 mongoosey.set('app',app);
 ```
 
+For a full example, take a look at [demo.js](https://github.com/johnjones4/Mongoosey/blob/master/demo.js).
+
 After that, Mongoosey will setup routes under `/db` to manage all defined Mongoose schemas. For instance, if there is a model named _User_, Mongoosey will setup the following pages to manage it:
 
 * **/db/User** - Lists all MongoDB documents in the collection associated with that model
