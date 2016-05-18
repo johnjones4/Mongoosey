@@ -1,7 +1,9 @@
 var routes = require('./lib/routes');
-var mongoose = require('mongoose');
+
+routes.filepathBase = __dirname;
 
 var app;
+var mongoose;
 var handlers = [
   function(req,res,next) {
     req.models = mongoose.modelNames();
@@ -46,6 +48,9 @@ exports.set = function(key,value) {
       break;
     case 'render':
       routes.render = value;
+      break;
+    case 'mongoose':
+      mongoose = value;
       break;
   }
 }

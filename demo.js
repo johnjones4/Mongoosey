@@ -43,6 +43,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 mongoosey.set('app',app);
+mongoosey.set('mongoose',mongoose);
 
 app.listen(8000,function() {
   console.log('Server running.');

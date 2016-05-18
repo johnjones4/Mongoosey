@@ -15,6 +15,7 @@ Then, pass your express app to Mongoosey:
 ```
 var mongoosey = require('mongoosey');
 mongoosey.set('app',app);
+mongoosey.set('mongoose',mongoose);
 ```
 
 For a full example, take a look at [demo.js](https://github.com/johnjones4/Mongoosey/blob/master/demo.js).

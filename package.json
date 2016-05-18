@@ -7,7 +7,10 @@
     "type": "git",
     "url": "git+https://github.com/johnjones4/Mongoosey.git"
   },
-  "author": "John Jones <johnjones4@gmail.com>",
+  "author": {
+    "name": "John Jones",
+    "email": "johnjones4@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johnjones4/Mongoosey/issues"
@@ -20,5 +23,32 @@
   },
   "devDependencies": {
     "body-parser": "^1.15.1"
-  }
+  },
+  "gitHead": "d98504eca74b4c02904fde48ee035e9678621057",
+  "_id": "mongoosey@1.0.0",
+  "scripts": {},
+  "_shasum": "e2be84da37d8f30ecc99a942171ce7d22a115b69",
+  "_from": "mongoosey@latest",
+  "_npmVersion": "2.15.1",
+  "_nodeVersion": "4.4.4",
+  "_npmUser": {
+    "name": "johnjones4",
+    "email": "johnjones4@gmail.com"
+  },
+  "dist": {
+    "shasum": "e2be84da37d8f30ecc99a942171ce7d22a115b69",
+    "tarball": "https://registry.npmjs.org/mongoosey/-/mongoosey-1.0.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "johnjones4",
+      "email": "johnjones4@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/mongoosey-1.0.0.tgz_1463536504269_0.6848012707196176"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/mongoosey/-/mongoosey-1.0.0.tgz"
 }
