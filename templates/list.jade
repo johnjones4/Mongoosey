@@ -1,0 +1,19 @@
+extends base
+
+block content
+  p
+    a(href='/db/' + currentModel + '/new', class="btn btn-success")
+      span New
+      |  
+      span= currentModel
+  table(class="table table-striped")
+    thead
+      tr
+        th Description
+        th Options
+    tbody
+      for object in objects
+        tr
+          td= object.description
+          td
+            a(href=object.url, class="btn btn-primary btn-xs") View

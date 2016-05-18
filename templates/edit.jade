@@ -1,0 +1,23 @@
+extends base
+
+block head
+  link(rel="stylesheet",href="/db/static/jsoneditor.min.css")
+  script(src="/db/static/jsoneditor.min.js")
+  
+block content
+  if errors
+    for error in errors
+      div(class="alert alert-danger")= error
+  div(id="jsoneditor", data-json=json, style="height: 600px;")
+  form(method="post")
+    input(type="hidden", value=json, name="json")
+    button(class="btn btn-primary", type="submit") Save
+  script.
+    var container = document.getElementById('jsoneditor');
+    var editor = new JSONEditor(container, {
+      'onChange': function() {
+        document.querySelector('input[name="json"]').value = JSON.stringify(editor.get());
+      }
+    });
+    editor.set(JSON.parse(container.getAttribute('data-json')));
+    

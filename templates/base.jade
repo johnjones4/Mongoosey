@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+    link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+    block head
+  body
+    nav(class="navbar navbar-inverse navbar-fixed-top")
+      div(class="container")
+        div(class="collapse navbar-collapse")
+          ul(class="nav navbar-nav")
+            for model in models
+              li(class=currentModel == model ? 'active': false)
+                a(href='/db/' + model)= model
+    div(class="container", style="padding-top: 30px;")
+      h1(class="page-header")= title
+      block content
