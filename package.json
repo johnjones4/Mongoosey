@@ -1,11 +1,8 @@
 {
   "name": "mongoosey",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple Mongoose frontend that can be built into a pre-existing Express application.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johnjones4/Mongoosey.git"
